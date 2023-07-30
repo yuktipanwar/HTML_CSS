@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <!--form submittion is done with some backend languages such as php-->
+        <!--GET is used for insensitive data-->
+        <!--POST is used for confedentail information or sensitive data such as passwords-->
+        <!--Action attribute sends the information of the form to the mentioned location-->
+        <!--while sending a large amount of data into the form we need to chnage the encription type to multipart/form-data, it means when the data is received it will be broken into multiple parts-->
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+            <label for="username">username:</label>
+            <input type="text" id="username" placeholder="xyz@1" minlength="6" maxlength="50" required>
+            
+            <!--For attribute of the label should match the id-->
+            <label for="password">password:</label>
+            <input type="passward" id="password" minlength="6" maxlength="15" required><br>
+
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="bantuka4@gmail.com" required><br>
+
+            <!--pattern can be set to set the pattern of input-->
+            <label for="phone">phone no.:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+            <label for="bday">birthday:</label>
+            <input type="date" id="bday"><br>
+
+            <!--value can be set to use as default value of input-->
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+            <!--After adding name attribute the radio buttons will come under the same group title-->
+            <label for="title">title:</label>
+
+            <label for="Mr.">Mr.:</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+
+            <label for="Ms.">Ms.:</label>
+            <input type="radio" id="Ms." value="Ms." name="title">
+
+            <label for="PhD.">PhD.:</label>
+            <input type="radio" id="PhD." value="PhD." name="title"><br>
+
+            <label for="payment">payment:</label>
+            <select id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+                
+            </select><br>
+
+            <label for="subscribe">subscribe:</label>
+            <input type="checkbox" id="subscribe"><br>
+
+            <label for="comment">comment:</label>
+            <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+            <label for="file">file:</label>
+            <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+
+
+
+
+        
+
+            <input type="reset"><br>
+            <input type="submit">
+
+
+        </form>
+
+
+    </body>
+</html>

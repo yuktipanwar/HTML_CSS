@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="combi_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        combinators = explains the relationship between listed selectors:-
+             (space)= descendant
+            > = child         {all children are decendants but not vice versa}
+            ~ = general sibling
+            + = adjacent sibling
+
+            eg- selector > selector or 
+            div > p 
+    -->
+    <div id="container">
+        <p>this is #1</p>          <!--#1 & #2 are direct children-->
+        <p>this is #2</p>          <!--child-->
+        <div>
+            <p>this is #3</p>     <!--#3 is a decentant or u can say a grand child-->
+        </div>
+    </div>
+
+    <!--if we wrap #4 & #5 in <div> then they will no longer be general siblings-->
+
+    <p>this is #4</p>            <!--#4 is adjacent sibling-->
+    <p>this is #5</p>              <!--#4 & #5 are general siblings as both 'paras inside div' and 'paras outside div' are considered children of <body> so they r siblings-->
+    
+</body>
+</html>

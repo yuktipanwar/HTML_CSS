@@ -1,0 +1,35 @@
+/*the drop down displays even when we take our cursor in the line of the food button to prevent that*/
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: rgb(197, 196, 196);
+    color:white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: rgb(230, 229, 229);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgb(70, 70, 70);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: grey;
+}
+.dropdown a:hover{
+    background-color: rgb(238, 204, 210);
+
+}

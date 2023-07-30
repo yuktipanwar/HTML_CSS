@@ -1,0 +1,67 @@
+body{
+    background-color: grey;
+}
+/*
+#box:hover{
+    animation: glow;
+    animation-duration:2s;
+}*/
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: hsl(0, 97%, 72%);
+    font-size: 13em ;
+    text-align: center;
+    animation: glow;
+    animation-duration:2s; 
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+/*  animation-play-state:paused; */
+/*  animation-timing-function: ease-in-out; */
+
+/*  animation-timing-function: steps(5);   
+  /*FadeIn animation*/
+/*  opacity: 0;  */
+}
+@keyframes slideLeft{
+    from{transform: translateX(100%)}  /*100% compared to the elements own size*/
+}
+@keyframes slideRight{
+    to{transform: translateX(300%)}  /*100% compared to the elements own size*/
+}
+@keyframes slideUp{
+    from{transform: translateY(200%)}  /*100% compared to the elements own size*/
+}
+@keyframes slideDown{
+    to{transform: translateY(200%)}  /*100% compared to the elements own size*/
+}
+@keyframes rotate{
+    /* we can use from/to/percentage */
+/*  100%{transform: rotateX(360deg);}  */
+    50%{transform: rotateZ(360deg);} /*completes the animation at 50% length of the duration and then roates back*/  
+}
+@keyframes grow{
+    50%{transform: scale(2,2);}
+}
+@keyframes shrink{
+    50%{transform: scale(0.5,0.5);}
+}
+@keyframes fade{
+    50%{opacity: 0}
+}
+/*to create a fadeIn effect set the opacity of the element originally to 0 and then set it 1 in the keyframe*/
+
+@keyframes fadeIn{
+    100%{opacity: 1}
+}
+@keyframes colorChange{
+    0%{background-color: hsl(0, 97%, 72%);}
+    20%{background-color: orange ;}
+    40%{background-color: yellow;}
+    60%{background-color: rgb(127, 255, 153);};
+    80%{background-color: rgb(124, 251, 251);}
+    100%{background-color: rgb(190, 130, 240);}
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px yellow}
+}

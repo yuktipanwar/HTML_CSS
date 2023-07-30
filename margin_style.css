@@ -1,0 +1,22 @@
+body{
+    margin: 0px
+}
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    /*margin: auto;*/
+}
+
+#box1{
+    background-color: rgb(241, 112, 112);
+    margin-left: auto;
+}
+#box2{
+    background-color: rgb(92, 200, 240);
+    margin: auto;
+}
+#box3{
+    background-color: rgb(92, 240, 205);
+}

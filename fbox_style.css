@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: row; /* by default flex direction is row, other options can be row-reverse, column, column-reverse, etc.*/
+    border: 10px solid black;
+    height: 90vh;
+    /*we can justify content on the main axis*/
+/*justify-content: space-evenly; /*other options are, flex-start, flex-end, space-between, space-around, space-evenly,etc*/
+    /*we can also justify content on the cross axis*/
+   /*align-items: center;*/
+    flex-wrap: wrap; /*other options are wrap-reverse, no-wrap,etc.*/
+  /*align-content: space-between; */
+    align-content: flex-start;
+    column-gap: 1em;
+    row-gap: 1em;
+
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: hsl(0, 100%, 70%);
+  /*align-self:start;*/
+}
+#box2{
+    background-color: hsl(50, 100%, 70%);
+  /*align-self:center;*/
+  /*order:-1; /*1--wil place box 1 in the end and -1--will place it int the begining*/
+}
+#box3{
+    background-color: hsl(88, 100%, 70%);
+  /*align-self:end;*/
+}
+#box4{
+    background-color: hsl(194, 100%, 70%);
+}

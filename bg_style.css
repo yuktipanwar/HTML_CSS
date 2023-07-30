@@ -1,0 +1,7 @@
+body{
+    background-image: url(images/tulips.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;    /*if the image scrolls with the webpage or not; it will be fixed in this case."  */
+    background-size: cover;
+}

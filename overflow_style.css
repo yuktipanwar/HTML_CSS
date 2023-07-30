@@ -1,0 +1,10 @@
+div{
+    border: 2px solid;
+    height: 75px;       
+/*  overflow: visible;
+    overflow: hidden; 
+    overflow: clip;
+    overflow-clip-margin: 13px;    /*very similar to hidden but with overflow-clip-margin property we can select how much text overflows. */
+/*  overflow: scroll;             */
+    overflow: auto;               /*scroll bar is displayed only when needed*/
+}

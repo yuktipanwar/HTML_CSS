@@ -1,0 +1,38 @@
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(133, 213, 237);
+/*  position: relative;      /*if position is set to relative we can move this element to the right, left, upwards or downwords.  */
+/*  top: 100 px;    /*the element will e pused 100 px downwards relative to top */
+/*  left: 100px;    /*these values can also be negative */
+    position: fixed;  /*the element gets fixed to the viewport (web browser) */
+    right: 0px;
+    bottom: 0px;
+}
+/*
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(243, 123, 123);
+    position: fixed;
+    top: 100px;
+    left:100px;
+}  */
+
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(243, 123, 123);
+    position: sticky;  /*sticky is very similar to fixed but in case of sticky element has its own space. */
+    top: 0px;
+}
+
+#box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(237, 189, 99);
+/*  position: absolute;  /*if we move box 2 position without movinf box 3, box 3 will move with box 2 as the psotion is set to e absolute */
+    position: static;
+    top: 50px;
+    left: 50px;
+}

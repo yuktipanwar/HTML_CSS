@@ -1,0 +1,38 @@
+/*
+a:link{
+    color:hsl(221,100%,74%);
+}
+a:hover{
+    color:hsl(221,100%,86%);
+    font-size: 1.1em;
+}
+/*active kicks in when you r holding down the cursor over an element */
+/*
+a:active{
+    color:blue;
+    font-size: 1.1em;
+}
+/*if a link is visited by default it is purple*/
+/*
+a:visited{
+    color:grey;
+} */
+
+li:hover{
+    background-color: pink;
+}
+/*not () pseudo class does the opposite of the mentioned pseudo class */
+li:not(:hover){
+    background-color: rgb(201, 199, 199);
+}
+/*the selcted position inside paranthesis will show the mentioned property
+ eg-
+    2---second element.
+    odd---odd elements
+    even
+    3n
+    3n+2
+    variable, etc. */
+li:nth-child(3){
+    background-color: rgb(249, 249, 168);
+}

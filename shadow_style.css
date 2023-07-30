@@ -1,0 +1,15 @@
+/*text shadows for text*/
+/* we need to set two properties in the text shadow, horizontal and vertical offset */
+/*a third number can be added for a blur*/
+/*more than one shadow can be added, put negative offset for shadows to be directed to left*/
+h1{
+    text-shadow: 3px 5px 4px pink, -3px -5px 4px rgb(86, 218, 214);
+
+}
+/*box shadows for other elements*/
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(234,234,234);
+    box-shadow:3px 3px 5px;
+}

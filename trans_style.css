@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center; 
+
+    transform: translateX(100px) rotateZ(45deg) scale(0.5);
+}
+#box1{
+
+    background-color: rgb(127, 255, 161);
+  /*TRANSLATION*/
+    /*we can translate x on the x axis and y on the y axis*/
+/*  transform: translateX(50%); /*positive numbers will move the elements to the right and negative will move it to the left*/
+/*  transform: translateY(50px); */
+/*  transform: translate(50px, 50px); /*for both x and y translation together */
+
+  /*ROTATION*/
+/*  transform: rotateX(25deg); /*in degrees*/
+/*  transform: rotateY(125deg); */
+/*  transform: rotatez(25deg); */
+
+  /*SCALING*/
+/*  transform: scaleX(1.2);  /*1 coresponding to 100%, so, 1.2 corresponds to 120%*/
+
+  /*SKEW*/
+/*  transform: skewX(40deg);
+    transform: skewY(30deg); */
+
+    /*you can apply more than one trasformation at a time*/
+/*  transform: translate(100%) rotateZ(90deg) scale(0.5); */
+
+
+}
+
+#box2{
+    background-color: rgb(255, 129, 129);
+}
+
+#box3{
+    background-color: rgba(39, 102, 240, 0.539);
+}

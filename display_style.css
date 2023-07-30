@@ -1,0 +1,23 @@
+div{
+    background-color: rgb(239, 76, 76);
+    width: 100px;
+    height: 100px;
+   display: inline-block;   /*display property doesn't do anything much here as the element already appears as a block*/
+   visibility: hidden;    
+}
+
+/*by using display we can customize how the elements are displayed*/
+span{
+    background-color: rgb(105, 158, 232);
+    /* for a inline element width and height can't be applied*/ 
+    display: inline-block;
+    width: 100px;      /*now that display property is added, we can set width and height*/
+    height: 100px;
+
+}
+
+/*display: block;
+  display: inline;
+  display: inline-block;
+  display: none;  /*erases the property
+  */

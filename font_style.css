@@ -1,0 +1,20 @@
+@font-face{
+    src:url(fonts/Oswald-Regular.ttf);
+    font-family: Oswald-regular;
+}
+@font-face{
+    src:url(fonts/Pangolin-Regular.ttf);
+    font-family: Pangolin-regular;
+}
+h1{
+    font-family: Roboto, verdana, arial;
+}
+/*not all fonts are universely accepted by all web browser so it's good practice to have a fall back font (arial in this case) that is rather web safe */
+p{
+    font-family: "lucida console", "courier new";
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+
+}
+/*treat em as %, eg- 0.5em=50%*/

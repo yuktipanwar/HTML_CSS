@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+header{
+    background-color: rgb(196, 196, 196);
+    text-align: center;
+    padding: 25px;
+}
+.navbar{
+    background-color: rgb(86, 85, 85);
+    height: 50px;    
+}
+aside{
+    width: 20%;
+    float:left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float:left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float:left;
+    padding: 10px;
+}
+footer{
+    display: block;
+    clear: both;
+    background-color: rgb(167, 167, 167);
+    text-align: center;
+    padding: 25px;
+}
+/*the layout is not mbolie friendly*/
+@media screen and (max-width:600px){   
+    /*if the width of the screen is below 600px the following properties will be applicable*/
+    aside, section, article{
+        width: 100%;
+    }
+
+}

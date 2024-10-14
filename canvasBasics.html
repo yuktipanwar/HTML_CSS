@@ -17,14 +17,79 @@
         body{
             background-color: #333;
             color: white;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
         }
 
         canvas{
             border-radius: 5px;
-            background-color: 
+            background-color: #efffff;
+            height: 80%;
         }
     </style>
     <body>
-        <canvas id="canva" width="600" height="600"></canvas>
+        <canvas id="canvas" width="500" height="500"></canvas>
     </body>
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth - 100;
+
+        //fill Rectangle
+        ctx.fillStyle = "pink";
+        ctx.fillRect(20, 20, 80, 30); //initializing rectangle.
+
+        ctx.fillStyle = "blue";
+        ctx.fillRect(120, 20,  80, 30);
+
+
+        //stroke rectangle
+        ctx.linewidth = 5;
+        ctx.strokeStyle = "green";
+        ctx.strokeRect(20, 20, 80, 30);
+
+        ctx.strokeStyle = "red";
+        ctx.strokeRect(120, 20, 80, 30);
+
+        //clear Rectangle
+        ctx.clearRect(25, 25, 70, 20);
+        ctx.clearRect(125, 25, 70, 20);
+
+        //fill text
+        ctx.font = "30px Arial";
+        ctx.fillStyle = "purple";
+        ctx.fillText("hey there", 400, 50);
+
+        //stroke text
+        ctx.font = "30px Arial";
+        ctx.strokeStyle = "red";
+        ctx.strokeText("hey there", 400, 100);
+
+        //line
+        ctx.beginPath();
+        ctx.moveTo(200, 150); //starting point
+        ctx.lineTo(400, 150);
+        ctx.lineTo(400, 250);
+        ctx.lineTo(200, 250);
+        ctx.lineTo(200, 150);
+
+        ctx.linewidth=10;
+        ctx.strokeStyle = "red";
+        ctx.stroke()
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
+        //circle
+        ctx.beginPath();
+        ctx.arc(100, 150,70, 0, Math.PI*2);
+        ctx.strokeStyle = "red";
+        ctx.stroke();
+        ctx.fillStyle = "pink";
+        ctx.fill();
+
+
+
+    </script>
 </html>
